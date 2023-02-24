@@ -31,13 +31,9 @@ a {
   text-decoration: none;
 }
 
-img {
-  display: inline-block;
-  margin-bottom: -4px;
-}
-
 html {
   scroll-behavior: smooth;
+  font-size: 0;
 }
 
 body {
@@ -76,22 +72,28 @@ input, textarea {
 .button-scroll {
   border-radius: var(--radius-small);
   background: var(--color-green);
-  color: var(--color-black);
-  font-weight: var(--medium);
   transition: var(--time);
   display: none;
   position: fixed;
   bottom: 30px;
   right: 30px;
-  font-size: 16px;
   cursor: pointer;
   padding: 15px 20px 15px 20px;
 }
 
+.button-scroll-title {
+  color: var(--color-black);
+  font-weight: var(--medium);
+  font-size: 16px;
+}
+
 .button-scroll:hover {
   background: var(--color-black);
-  color: var(--color-white);
 }
+
+.button-scroll:hover .button-scroll-title {
+  color: var(--color-white);
+} 
 
 .download {
   display: inline-block;
@@ -126,7 +128,6 @@ input, textarea {
 
 .download_google:before {
   background: url("../img/download/google-light.svg");
-  width: 162px;
 }
 
 .download:hover.download_apple:before {
@@ -135,11 +136,6 @@ input, textarea {
 
 .download:hover.download_google:before {
   background: url("../img/download/google-dark.svg");
-}
-
-.download_apple,
-.footer__block__link:first-of-type {
-  margin-right: -4px;
 }
 
 .download_google,
@@ -221,11 +217,9 @@ input, textarea {
 /* mission */
 
 .mission {
-  padding-top: 218px;
-}
-
-.mission .container {
-  display: block;
+  /* padding-top: 218px; */
+  padding-top: 128px;
+  margin-bottom: 0px;
 }
 
 .mission__title {
@@ -233,11 +227,84 @@ input, textarea {
   width: 700px;
 }
 
+.mission__block {
+  margin: 0;
+}
+
+.mission__block:nth-child(2) {
+  width: 420px;
+  height: 560px;
+  margin-left: -30px;
+}
+
+.mission__block:nth-child(3) {
+  margin-left: 196px;
+}
+
+.container:nth-child(2) .mission__block {
+  margin-left: 490px;
+  margin-bottom: 130px;
+}
+
+.mission__block__title {
+  font-weight: var(--medium);
+  font-size: 60px;
+  line-height: 60px;
+  width: 450px;
+  margin-bottom: 90px;
+}
+
+.mission__block__title__text {
+  margin-left: 120px;
+}
+
+.mission__block__qr {
+  font-weight: var(--light);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.mission__block__text {
+  font-weight: var(--medium);
+  font-size: 26px;
+  line-height: 30px;
+  width: 410px;
+  margin: 0;
+}
+
+.mission__block__img {
+  width: 420px;
+  height: 886px;
+  position: absolute;
+  background: url("../img/learn/learn-1.png") no-repeat center;
+  top: 28px;
+}
+
+.mission__block__qr__img {
+  margin-left: -20px;
+  margin-top: 10px;
+}
+
 .mission__text {
   font-weight: var(--light);
   font-size: 18px;
   line-height: 24px;
   width: 700px;
+}
+
+.mission .container:nth-child(3) {
+  display: block;
+}
+
+.mission__cover:before {
+  background: url("../img/icon/mission-icon.svg") no-repeat center;
+  height: 410px;
+  width: 805px;
+  position: absolute;
+  content: "";
+  margin-top: -140px;
+  margin-left: 180px;
+  z-index: -1;
 }
 
 /* mission */
@@ -408,17 +475,15 @@ input, textarea {
 
 .learn {
   /* margin-bottom: 150px; */
+  margin-bottom: 50px;
 }
 
 .learn__title {
-  margin: 0 0 90px 0;
+  /* margin: 0 0 90px 0; */
+  margin: 0 0 45px 0;
 }
 
-.learn__block:first-of-type {
-  width: 610px;
-}
-
-.learn__block__inside__title {
+.learn__block__title {
   font-weight: var(--bold);
   font-size: 32px;
   line-height: 42px;
@@ -428,7 +493,7 @@ input, textarea {
   margin-bottom: 40px;
 }
 
-.learn__block__inside__text {
+.learn__block__text {
   font-weight: var(--light);
   font-size: 16px;
   line-height: 22px;
@@ -436,7 +501,7 @@ input, textarea {
   margin-bottom: 15px;
 }
 
-.learn__block__inside__price {
+.learn__block__price {
   color: var(--color-pink);
   font-weight: var(--medium);
   font-size: 18px;
@@ -445,12 +510,12 @@ input, textarea {
   margin-bottom: 40px;
 }
 
-.learn__block__inside-2__lessons {
+.learn__block__lessons {
   font-weight: var(--medium);
   font-size: 28px;
   line-height: 28px;
   text-align: center;
-  width: 180px;
+  width: 220px;
   margin-bottom: 35px;
 }
 
@@ -471,22 +536,49 @@ input, textarea {
   width: 335px;
 }
 
-.learn__block__inside {
+.learn__block__cover-1:before,
+.learn__block__cover-2:before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+}
+
+.learn__block__cover-1:before {
   background: url("../img/icon/learn-icon-1.svg") no-repeat center;
-  background-size: 375px;
+  height: 235px;
+  width: 485px;
+  margin-top: 50px;
+  margin-left: 30px;
 }
 
-.learn__block__inside-2 {
+.learn__block__cover-2:before {
   background: url("../img/icon/learn-icon-2.svg") no-repeat center;
-  background-size: 190px;
+  height: 145px;
+  width: 250px;
+  margin-top: -15px;
+  margin-left: 175px;
 }
 
-.leart__block__img {
-  width: 270px;
+.learn__block:first-of-type {
+  width: 610px;
+  margin: 0;
 }
 
-.leart__block__img:first-of-type {
-  margin-right: 45px;
+.learn__block__img {
+  width: 420px;
+  height: 886px;
+  position: absolute;
+  margin-top: -130px;
+}
+
+.learn__block__img_cover-1 {
+  background: url("../img/learn/learn-1.png") no-repeat center;
+  margin-left: -386px;
+}
+
+.learn__block__img_cover-2 {
+  background: url("../img/learn/learn-2.png") no-repeat center;
+  margin-left: -65px;
 }
 
 /* learn */
@@ -661,9 +753,9 @@ input, textarea {
   color: var(--color-white);
   transition: var(--time);
   width: 100px;
-  display: inline-block;
   text-align: center;
   line-height: 48px;
+  font-size: 14px;
   height: 48px;
   display: flex;
   margin-right: 0;
@@ -689,6 +781,7 @@ input, textarea {
 }
 
 .blog__more {
+  font-size: 16px;
   color: var(--color-white);
   background: var(--color-black);
   transition: var(--time);
