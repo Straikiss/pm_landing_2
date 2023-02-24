@@ -176,8 +176,8 @@ input, textarea {
   margin: 0;
 }
 
-.header__link:hover,
-.header__link_active {
+a.header__link:hover,
+a.header__link_active {
   color: var(--color-light-green);
 }
 
