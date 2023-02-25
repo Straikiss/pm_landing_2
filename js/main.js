@@ -53,3 +53,16 @@ function ButtonScroll() {
 }
 
 document.getElementById("open").click();
+
+function changeLanguage(browserLang) {
+  for(let key in lang) {
+    let elem = document.querySelector('.lng-' + key);
+    if(elem) 
+      elem.innerHTML = lang[key][browserLang];
+  }
+}
+
+if(navigator.language.slice(0,2) == "es")
+  changeLanguage("es");
+else
+  changeLanguage("en");
