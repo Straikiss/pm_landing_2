@@ -28,6 +28,7 @@
 /* main */
 
 a {
+  color: var(--color-black);
   text-decoration: none;
 }
 
@@ -44,6 +45,15 @@ body {
 
 input, textarea {
   outline: none;
+}
+
+section {
+  opacity: 0;
+}
+
+section.animate {
+  opacity: 1;
+  transition: all .5s;
 }
 
 .container {
@@ -82,7 +92,6 @@ input, textarea {
 }
 
 .button-scroll-title {
-  color: var(--color-black);
   font-weight: var(--medium);
   font-size: 16px;
 }
@@ -167,7 +176,6 @@ input, textarea {
 }
 
 .header__link {
-  color: var(--color-black);
   font-weight: var(--medium);
   transition: var(--time);
   font-size: 16px;
@@ -182,7 +190,6 @@ a.header__link_active {
 }
 
 .header__button {
-  color: var(--color-black);
   font-weight: var(--medium);
   transition: var(--time);
   border: var(--border);
@@ -781,12 +788,12 @@ a.header__link_active {
 }
 
 .blog__more {
-  font-size: 16px;
   color: var(--color-white);
   background: var(--color-black);
   transition: var(--time);
   font-weight: var(--medium);
   border: var(--border);
+  font-size: 16px;
   display: block;
   width: 100%;
   text-align: center;
@@ -956,20 +963,19 @@ a.header__link_active {
 }
 
 .footer__title {
+  font-weight: var(--medium);
   font-size: 14px;
   line-height: 14px;
-  flex-wrap: var(--light);
   margin: 0 auto 0 auto;
 }
 
 .footer__title__link {
-  color: var(--color-black);
   transition: var(--time);
 }
 
 .footer__title__link:hover {
-  text-decoration: underline;
   color: var(--color-light-green);
+  text-decoration: underline;
 }
 
 .footer__block__method {
@@ -994,7 +1000,6 @@ a.header__link_active {
 }
 
 .footer__block__link {
-  color: var(--color-black);
   border-radius: var(--radius-big);
   font-weight: var(--medium);
   transition: var(--time);
