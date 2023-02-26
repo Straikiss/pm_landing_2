@@ -8,7 +8,7 @@
   --color-white: #fcfcfc;
   --color-light-green: #a2c1c4;
   --color-dark-gray: #a9a9a9;
-  --color-gray: #f6f6f6;
+  --color-gray: #f9f8f6;
   --radius-big: 50px;
   --radius-small: 10px;
   --border: 2px solid #000;
@@ -230,7 +230,7 @@ a.header__link_active {
 }
 
 .mission__title {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   width: 700px;
 }
 
@@ -303,17 +303,6 @@ a.header__link_active {
   display: block;
 }
 
-.mission__cover:before {
-  background: url("../img/icon/mission-icon.svg") no-repeat center;
-  height: 410px;
-  width: 805px;
-  position: absolute;
-  content: "";
-  margin-top: -140px;
-  margin-left: 180px;
-  z-index: -1;
-}
-
 /* mission */
 
 
@@ -372,7 +361,6 @@ a.header__link_active {
 
 .ads__company {
   border-radius: var(--radius-big);
-  background: #e8e8e8;
   padding: 15px;
 }
 
@@ -380,10 +368,17 @@ a.header__link_active {
   margin-right: 10px;
 }
 
+.container:nth-child(2) .ads__company {
+  background: url("../img/ads/ads-cover-1.png") no-repeat center;
+  background-size: cover;
+}
+
 .container:nth-child(3) .ads__company {
   width: 100%;
   margin-top: 10px;
   display: flex;
+  background: url("../img/ads/ads-cover-2.png") no-repeat center;
+  background-size: cover;
 }
 
 .container:nth-child(3) .ads__company__inside {
@@ -454,11 +449,11 @@ a.header__link_active {
 
 .ads__company__title {
   font-weight: var(--medium);
-  color: var(--color-dark-gray);
+  color: var(--color-white);
   font-size: 36px;
   line-height: 36px;
   width: 250px;
-  margin: 95px 10px 110px 10px;
+  margin: 35px 10px 50px 10px;
 }
 
 .ads__company__inside__block {
@@ -482,25 +477,47 @@ a.header__link_active {
 
 .learn {
   /* margin-bottom: 150px; */
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 .learn__title {
   /* margin: 0 0 90px 0; */
-  margin: 0 0 45px 0;
+  margin: 0 0 30px 0;
 }
 
-.learn__block__title {
+.learn .container {
+  display: block;
+}
+
+.learn__text {
+  font-weight: var(--light);
+  font-size: 18px;
+  line-height: 28px;
+  width: 540px;
+  margin-left: 0;
+  margin-bottom: 45px;
+} 
+
+.learn__cover {
+  border-radius: var(--radius-big);
+  background: var(--color-gray);
+  position: relative;
+  z-index: -2;
+  display: flex;
+  padding: 35px;
+}
+
+.learn__cover__block__title {
   font-weight: var(--bold);
   font-size: 32px;
   line-height: 42px;
   margin-top: 80px;
-  width: 500px;
+  width: 445px;
   text-align: center;
   margin-bottom: 40px;
 }
 
-.learn__block__text {
+.learn__cover__block__text {
   font-weight: var(--light);
   font-size: 16px;
   line-height: 22px;
@@ -508,7 +525,7 @@ a.header__link_active {
   margin-bottom: 15px;
 }
 
-.learn__block__price {
+.learn__cover__block__price {
   color: var(--color-pink);
   font-weight: var(--medium);
   font-size: 18px;
@@ -517,7 +534,7 @@ a.header__link_active {
   margin-bottom: 40px;
 }
 
-.learn__block__lessons {
+.learn__cover__block__lessons {
   font-weight: var(--medium);
   font-size: 28px;
   line-height: 28px;
@@ -526,7 +543,7 @@ a.header__link_active {
   margin-bottom: 35px;
 }
 
-.learn__block__time {
+.learn__cover__block__time {
   color: var(--color-dark-gray);
   font-weight: var(--light);
   font-size: 16px;
@@ -535,7 +552,7 @@ a.header__link_active {
   margin-bottom: 30px;
 }
 
-.learn__block__more {
+.learn__cover__block__more {
   font-weight: var(--medium);
   font-size: 16px;
   line-height: 20px;
@@ -543,47 +560,35 @@ a.header__link_active {
   width: 335px;
 }
 
-.learn__block__cover-1:before,
-.learn__block__cover-2:before {
-  position: absolute;
-  content: "";
-  z-index: -1;
-}
-
-.learn__block__cover-1:before {
+.learn__cover__block__cover:before {
   background: url("../img/icon/learn-icon-1.svg") no-repeat center;
   height: 235px;
   width: 485px;
   margin-top: 50px;
   margin-left: 30px;
+  position: absolute;
+  content: "";
+  z-index: -1;
 }
 
-.learn__block__cover-2:before {
-  background: url("../img/icon/learn-icon-2.svg") no-repeat center;
-  height: 145px;
-  width: 250px;
-  margin-top: -15px;
-  margin-left: 175px;
-}
-
-.learn__block:first-of-type {
-  width: 610px;
+.learn__cover__block:first-of-type {
+  width: 520px;
   margin: 0;
 }
 
-.learn__block__img {
+.learn__cover__block__img {
   width: 420px;
   height: 886px;
   position: absolute;
   margin-top: -130px;
 }
 
-.learn__block__img_cover-1 {
+.learn__cover__block__img:first-child {
   background: url("../img/learn/learn-1.png") no-repeat center;
   margin-left: -386px;
 }
 
-.learn__block__img_cover-2 {
+.learn__cover__block__img:last-child {
   background: url("../img/learn/learn-2.png") no-repeat center;
   margin-left: -65px;
 }
