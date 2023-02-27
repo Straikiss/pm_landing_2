@@ -2,6 +2,11 @@ let acc = document.getElementsByClassName("platform__faq");
 let i;
 let buttonScroll = document.getElementsByClassName("button-scroll")[0];
 let menu = document.getElementsByClassName("header")[0];
+let apple = document.getElementsByClassName('download_apple');
+let google = document.getElementsByClassName("download_google");
+let learnImg1 = document.getElementsByClassName("learn__cover__block__img")[0];
+let learnImg2 = document.getElementsByClassName("learn__cover__block__img")[1];
+let missionImg = document.getElementsByClassName("mission__block__img")[0];
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
@@ -55,18 +60,28 @@ function ButtonScroll() {
 document.getElementById("open").click();
 
 function changeLanguage(browserLang) {
+  document.querySelector('title').innerHTML = lang['title'][browserLang];
+
   for(let key in lang) {
     let elem = document.querySelector('.lng-' + key);
     if(elem) 
       elem.innerHTML = lang[key][browserLang];
   }
+
+  for(i = 0; i < 2; i++) {
+    apple[i].style.background = "url('img/download/" + browserLang + "/apple-light.svg') no-repeat center";
+    google[i].style.background = "url('img/download/" + browserLang + "/google-light.svg') no-repeat center";
+  }
+
+  learnImg1.style.background = "url('img/learn/" + browserLang + "/learn-1.png') no-repeat center";
+  learnImg2.style.background = "url('img/learn/" + browserLang + "/learn-2.png') no-repeat center";
+  missionImg.style.background = "url('img/learn/" + browserLang + "/learn-1.png') no-repeat center";
 }
 
 if(navigator.language.slice(0,2) == "es")
   changeLanguage("es");
 else
   changeLanguage("en");
-
 
 function onEntry(entry) {
   entry.forEach(change => {

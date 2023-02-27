@@ -117,7 +117,6 @@ section.animate {
 .download_apple:before,
 .download_google, 
 .download_google:before {
-  transition: var(--time);
   height: 48px;
 }
 
@@ -131,21 +130,21 @@ section.animate {
   width: 162px;
 }
 
-.download_apple:before {
+/* .download_apple {
   background: url("../img/download/apple-light.svg");
-}
+} */
 
-.download_google:before {
+/* .download_google {
   background: url("../img/download/google-light.svg");
-}
+} */
 
-.download:hover.download_apple:before {
+/* .download:hover.download_apple:before {
   background: url("../img/download/apple-dark.svg");
 }
 
 .download:hover.download_google:before {
   background: url("../img/download/google-dark.svg");
-}
+} */
 
 .download_google,
 .footer__block__link:last-of-type {
@@ -283,7 +282,6 @@ a.header__link_active {
   width: 420px;
   height: 886px;
   position: absolute;
-  background: url("../img/learn/learn-1.png") no-repeat center;
   top: 28px;
 }
 
@@ -584,12 +582,10 @@ a.header__link_active {
 }
 
 .learn__cover__block__img:first-child {
-  background: url("../img/learn/learn-1.png") no-repeat center;
   margin-left: -386px;
 }
 
 .learn__cover__block__img:last-child {
-  background: url("../img/learn/learn-2.png") no-repeat center;
   margin-left: -65px;
 }
 
@@ -660,7 +656,7 @@ a.header__link_active {
 }
 
 .platform__block__text__link:hover {
-  transition: var(--time);
+  text-decoration: underline;
 }
 
 .platform__line {
