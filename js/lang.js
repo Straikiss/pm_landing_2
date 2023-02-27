@@ -1,4 +1,8 @@
 let lang = {
+  "title": {
+    "en": "System to buy promotion from Instagram and TikTok users - PostMarket",
+    "es": "Sistema para comprar anuncios y usuarios en Instagram y Tik Tok - PostMarket"
+  },
   "header-mission": {
     "en": "Our mission",
     "es": "Nuestra misión"
