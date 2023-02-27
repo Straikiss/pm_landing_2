@@ -654,6 +654,15 @@ a.header__link_active {
   padding-bottom: 50px;
 }
 
+.platform__block__text__link {
+  color: var(--color-pink);
+  transition: var(--time);
+}
+
+.platform__block__text__link:hover {
+  transition: var(--time);
+}
+
 .platform__line {
   width: var(--base-width);
   background: var(--color-dark-gray);
