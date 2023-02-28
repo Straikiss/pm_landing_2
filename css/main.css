@@ -105,6 +105,7 @@ section.animate {
 } 
 
 .download {
+  transition: var(--time);
   display: inline-block;
 }
 
@@ -130,21 +131,21 @@ section.animate {
   width: 162px;
 }
 
-/* .download_apple {
-  background: url("../img/download/apple-light.svg");
-} */
-
-/* .download_google {
-  background: url("../img/download/google-light.svg");
-} */
-
-/* .download:hover.download_apple:before {
-  background: url("../img/download/apple-dark.svg");
+.download_apple {
+  background: url("../img/download/en/apple-light.svg");
 }
 
-.download:hover.download_google:before {
-  background: url("../img/download/google-dark.svg");
-} */
+.download_google {
+  background: url("../img/download/en/google-light.svg");
+} 
+
+.download_apple:hover {
+  background: url("../img/download/en/apple-dark.svg");
+}
+
+.download_google:hover {
+  background: url("../img/download/en/google-dark.svg");
+}
 
 .download_google,
 .footer__block__link:last-of-type {
@@ -624,13 +625,13 @@ a.header__link_active {
   font-size: 24px;
   line-height: 28px;
   margin-left: 0;
-  min-width: 250px;
+  min-width: 310px;
 }
 
 .platform__faq__text {
   font-weight: var(--medium);
   font-size: 20px;
-  margin-left: 130px;
+  margin-left: 100px;
   width: 100%;
   height: 20px;
   line-height: 55px;
@@ -645,8 +646,8 @@ a.header__link_active {
   font-weight: var(--light);
   font-size: 16px;
   line-height: 24px;
-  width: 570px;
-  margin-left: 380px;
+  width: 750px;
+  margin-left: 410px;
   padding-bottom: 50px;
 }
 

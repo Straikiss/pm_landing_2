@@ -7,6 +7,12 @@ let google = document.getElementsByClassName("download_google");
 let learnImg1 = document.getElementsByClassName("learn__cover__block__img")[0];
 let learnImg2 = document.getElementsByClassName("learn__cover__block__img")[1];
 let missionImg = document.getElementsByClassName("mission__block__img")[0];
+let browserLang;
+
+if(navigator.language.slice(0,2) == "es")
+  browserLang = "es";
+else
+  browserLang = "en";
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
@@ -40,7 +46,7 @@ menu.onclick = function(e) {
 		item.classList.remove('header__link_active');
 	});
 	e.target.classList.add('header__link_active');
-};
+}
 
 window.onscroll = function() {
   if(document.documentElement.scrollTop > 1500)
@@ -51,7 +57,7 @@ window.onscroll = function() {
     document.getElementsByClassName("header")[0].style.padding = "15px 0 15px 0";
   else
     document.getElementsByClassName("header")[0].style.padding = "40px 0 40px 0";
-};
+}
 
 function ButtonScroll() {
   document.documentElement.scrollTop = 0;
@@ -59,7 +65,8 @@ function ButtonScroll() {
 
 document.getElementById("open").click();
 
-function changeLanguage(browserLang) {
+
+function changeLanguage() {
   document.querySelector('title').innerHTML = lang['title'][browserLang];
 
   for(let key in lang) {
@@ -67,21 +74,32 @@ function changeLanguage(browserLang) {
     if(elem) 
       elem.innerHTML = lang[key][browserLang];
   }
-
-  for(i = 0; i < 2; i++) {
-    apple[i].style.background = "url('img/download/" + browserLang + "/apple-light.svg') no-repeat center";
-    google[i].style.background = "url('img/download/" + browserLang + "/google-light.svg') no-repeat center";
-  }
-
   learnImg1.style.background = "url('img/learn/" + browserLang + "/learn-1.png') no-repeat center";
   learnImg2.style.background = "url('img/learn/" + browserLang + "/learn-2.png') no-repeat center";
   missionImg.style.background = "url('img/learn/" + browserLang + "/learn-1.png') no-repeat center";
 }
 
-if(navigator.language.slice(0,2) == "es")
-  changeLanguage("es");
-else
-  changeLanguage("en");
+changeLanguage();
+
+function dark(store){
+  if(store == "apple")
+    for(i = 0; i < 2; i++) 
+      apple[i].style.background = "url('img/download/" + browserLang + "/apple-dark.svg') no-repeat center";
+
+  if(store == "google")
+    for(i = 0; i < 2; i++) 
+      google[i].style.background = "url('img/download/" + browserLang + "/google-dark.svg') no-repeat center";
+}
+  
+function light(store){
+  if(store == "apple")
+    for(i = 0; i < 2; i++) 
+      apple[i].style.background = "url('img/download/" + browserLang + "/apple-light.svg') no-repeat center";
+
+  if(store == "google")
+    for(i = 0; i < 2; i++) 
+      google[i].style.background = "url('img/download/" + browserLang + "/google-light.svg') no-repeat center";
+}
 
 function onEntry(entry) {
   entry.forEach(change => {
