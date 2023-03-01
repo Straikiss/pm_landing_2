@@ -115,14 +115,10 @@ let elements = document.querySelectorAll('section');
 for(let elm of elements)
   observer.observe(elm);
 
-
-
 function OpenMenu(){
   document.getElementById('hidden-element').style.transform='translateX(0)';
-  // document.getElementsByClassName('container').style.opacity = "0.5";
 }
   
 function CloseMenu(){
   document.getElementById('hidden-element').style.transform='translateX(-100%)';
-  // document.getElementsByClassName('container').style.opacity = "0";
 }
