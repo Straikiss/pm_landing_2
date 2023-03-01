@@ -3,21 +3,26 @@
   <head>
     <title>Blogger - PostMarket</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
     <link rel="shortcut icon" type="image/x-icon" href="https://postmarket.pro/content/favicon/favicon.png">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <header class="header">
       <div class="container">
+        <div class="menu" onclick="OpenMenu();"></div>
         <h2 class="header__title upper">PostMarket</h2>
-        <a class="header__link upper lng-header-mission" href="#mission">Our mission</a>
-        <a class="header__link upper lng-header-offers" href="#offers">Get offers</a>
-        <a class="header__link upper lng-header-ads" href="#ads">Buying ads</a>
-        <a class="header__link upper lng-header-learn" href="#learn">Learn</a>
-        <a class="header__link upper lng-header-platform" href="#platform">Platform work</a>
-        <a class="header__link upper lng-header-blog" href="#blog">Blog</a>
-        <a class="header__button upper lng-header-clients" href="advertiser.html">Clients</a>
+        <div id="hidden-element" class="ttr">
+          <div class="menu" onclick="CloseMenu();"></div>
+            <a class="header__link upper lng-header-mission" href="#mission">Our mission</a>
+            <a class="header__link upper lng-header-offers" href="#offers">Get offers</a>
+            <a class="header__link upper lng-header-ads" href="#ads">Buying ads</a>
+            <a class="header__link upper lng-header-learn" href="#learn">Learn</a>
+            <a class="header__link upper lng-header-platform" href="#platform">Platform work</a>
+            <a class="header__link upper lng-header-blog" href="#blog">Blog</a>
+            <a class="header__button upper lng-header-clients" href="advertiser.html">Clients</a>
+        
+        </div>
       </div>
     </header>
     <section class="mission" id="mission">

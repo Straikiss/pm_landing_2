@@ -1093,3 +1093,232 @@ a.header__link_active {
 }
 
 /* footer */
+
+.ttr {
+  display: flex;
+  width: var(--base-width);
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    width: calc(100% - 30px);
+  }
+  .section {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .platform__line,
+  .line {
+    width: calc(100% - 30px);
+  }
+  .ads .container:nth-child(2) {
+    display: block;
+  }
+  .container:nth-child(2) .ads__company:first-child {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .button-scroll {
+    right: 15px;
+    bottom: 15px;
+  }
+  .container:nth-child(3) .ads__company__inside {
+    width: calc(100% - 60px);
+  }
+  .container:nth-child(3) .ads__company {
+    display: block;
+  }
+  .container:nth-child(3) .ads__company__title {
+    margin: 35px 10px 50px 10px;
+  }
+
+
+  .learn__cover__block__cover:before,
+  .learn__cover .leart__cover__block:nth-child(2) {
+    display: none;
+  }
+  .container:nth-child(3) .ads__company {
+    width: calc(100% - 30px);
+  }
+  .blog__title,
+  .mission__block__title,
+  .ads__text,
+  .learn__text,
+  .learn__cover__block__title,
+  .learn__cover__block:first-of-type,
+  .learn__cover__block__more,
+  .mission__text,
+  .mission__title,
+  .mission__block__text,
+  .offers__title  {
+    width: 100%;
+  }
+  .learn__cover__block__title {
+    margin-top: 0;
+  }
+
+  .mission {
+    padding-top: 0;
+  }
+
+  .mission .mission__block:nth-child(2),
+  .mission .mission__block:nth-child(3),
+  .mission .container:nth-child(2) {
+    display: none;
+  }
+
+
+
+
+  .ttr {
+    transform: translateX(-100%);
+    height: 100vh;
+    background: var(--color-white);
+    position: fixed;
+    width: 50%;
+    left: 0;
+    top: 0;
+    display: block;
+    transform: translateX(-100%);
+  }
+  .header {
+    padding: 15px 0 !important;
+  }
+  .header__title {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .menu {
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    background: var(--color-green);
+    margin-left: 0;
+    border-radius: var(--radius-small);
+    transition: var(--time);
+  }
+  .menu:hover {
+    background: var(--color-black);
+  }
+  .header__button, 
+  .header__link {
+    display: block;
+  }
+  .header__link {
+    padding: 15px;
+  }
+
+  .ttr .menu {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+  }
+
+  .ttr .header__button {
+    margin: auto;
+    margin-top: 30px;
+    width: calc(100% - 30px);
+  }
+
+  .offers__block {
+    display: block;
+    text-align: center;
+  }
+
+  .ads__company__inside__social__text,
+  .ads__company__inside__social__title,
+  .platform__faq__text,
+  .offers__block img {
+    display: none;
+  }
+  .offers__block__title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .offers__block__text {
+    padding-top: 0;
+  }
+  .platform__faq__title {
+    min-width: 100%;
+  }
+  .platform__block__text {
+    margin-left: 0;
+    width: 100%;
+  }
+  .ads__company__inside__social {
+    margin-bottom: 0;
+  }
+  .platform__faq {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .platform__faq:after {
+    top: 0;
+    right: 15px;
+  }
+
+  .blog__tab {
+    overflow: auto;
+  }
+  .blog__tab__link {
+    text-align: center;
+  }
+  .blog__content {
+    flex-direction: column;
+  }
+  .blog__content__article:first-of-type {
+    margin-right: 0;
+  }
+  .blog__content__article {
+    width: calc(100% - 40px);
+  }
+  .blog__content__article__tag,
+  .blog__content__article__img_cover {
+    display: none;
+  }
+  .blog__content__article__img {
+    height: auto;
+  }
+  .blog__content__article__link {
+    margin-top: 0;
+  }
+  .blog__content__article__title {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .blog__content__article__text {
+    width: 100%;
+  }
+  .footer__title {
+    text-align: center;
+    line-height: 28px;
+  }
+  .container .footer__block:nth-child(2) {
+    display: none;
+  }
+  .footer .container {
+    display: block;
+  }
+  .email__form__submit {
+    width: 100%;
+    margin-left: 0;
+  }
+  .email {
+    margin-bottom: 130px;
+  }
+  .email__form__input:first-of-type {
+    margin-left: 20px;
+    width: calc(100% - 80px);
+  }
+  .email__form__input, 
+  .email__form__textarea {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: calc(100% - 80px);
+  }
+  section {
+    opacity: 1
+  }
+}
