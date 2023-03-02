@@ -120,5 +120,6 @@ function OpenMenu(){
 }
   
 function CloseMenu(){
-  document.getElementById('hidden-element').style.transform='translateX(-100%)';
-}
+  if(window.innerWidth < 500)  
+    document.getElementById('hidden-element').style.transform='translateX(-100%)';
+} 

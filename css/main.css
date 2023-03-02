@@ -1351,9 +1351,9 @@ a.header__link_active {
     width: calc(100% - 80px);
   }
 
-  section {
+  /* section {
     opacity: 1
-  }
+  } */
 
   .ads__company__inside__block__text,
   .ads__company__inside__social__text {
