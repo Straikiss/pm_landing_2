@@ -66,7 +66,6 @@ function ButtonScroll() {
 
 document.getElementById("open").click();
 
-
 function changeLanguage() {
   document.querySelector('title').innerHTML = lang['title'][browserLang];
 
@@ -105,8 +104,6 @@ function light(store){
 light("apple");
 light("google");
 
-
-
 function onEntry(entry) {
   entry.forEach(change => {
     if(change.isIntersecting) 
@@ -129,3 +126,13 @@ function CloseMenu(){
   if(window.innerWidth < 1251)  
     header.style.transform='translateX(-100%)';
 } 
+
+function OpenModal(ModalName){
+  document.getElementById(ModalName).style.display='block';
+  document.getElementsByTagName('body')[0].style.overflowY="hidden";
+}
+
+function CloseModal(ModalName){
+  document.getElementById(ModalName).style.display='none';
+  document.getElementsByTagName('body')[0].style.overflowY="scroll";
+}

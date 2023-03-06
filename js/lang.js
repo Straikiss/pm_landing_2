@@ -128,18 +128,10 @@ let lang = {
     "es": "Las solicitudes publicitarias con pago sólo por publicación están accesibles para cualquier tipo de usuario de PostMarket. Pero mientras más alto sea tu estatus de bloguer, más solicitudes con pago por publicación recibirás de PostMarket. ¡Algunas marcas pueden elegirte como su embajador, si les agrada tus publicaciones en diferentes formatos! Las solicitudes publicitarias con pago sólo por publicación están accesibles para cualquier tipo de usuario de PostMarket. Pero mientras más alto sea tu estatus de bloguer, más solicitudes con pago por publicación recibirás de PostMarket. ¡Algunas marcas pueden elegirte como su embajador, si les agrada tus publicaciones en diferentes formatos!"
   },
   "platform-faq-title-10": {
-    "en": "What is partnership?",
-    "es": "¿Qué es el programa de socios?"
-  },
-  "platform_block_text-11": {
-    "en": "Come to become a PostMarket partner! Promote our partnership link and get 10% from the income of the involved users, and 10% from the advertisers’ expenditures.",
-    "es": "¡Conviértete en socio de PostMarket! Promueve nuestro enlace de socio y gana 10% de los ingresos de los ingresos de los usuarios obtenidos por redes sociales y el 10% de los gastos de los anunciantes. ¡Conviértete en socio de PostMarket! Promueve nuestro enlace de socio y gana 10% de los ingresos de los ingresos de los usuarios obtenidos por redes sociales y el 10% de los gastos de los anunciantes."
-  },
-  "platform-faq-title-11": {
     "en": "What is the blogger’s status and what does it mean?",
     "es": "¿Qué es el Estatus de Bloguer y qué es lo que hace?"
   },
-  "platform_block_text-12": {
+  "platform_block_text-11": {
     "en": "The blogger’s status determines the number and the quality of the requests you see in My Applications chapter. The better you complete applications seeking promotion, and the more of them you take up, the higher is your status!",
     "es": "El estatus de bloguer determina la cantidad y calidad de propuestas que ves en la sección de “mis aplicaciones”. Mientras mejor realices las solicitudes publicitarias, mientras más trabajes en ellas, más alto será tu estatus. Más información sobre estatus aquí."
   },

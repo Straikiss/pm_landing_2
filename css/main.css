@@ -43,6 +43,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+form {
+  height: 100%;
+}
+
 input, textarea {
   outline: none;
 }
@@ -131,7 +135,7 @@ section {
   width: 162px;
 }
 
-/* .download_apple {
+.download_apple {
   background: url("../img/download/en/apple-light.svg");
 }
 
@@ -145,11 +149,62 @@ section {
 
 .download_google:hover {
   background: url("../img/download/en/google-dark.svg");
-} */
+}
 
 .download_google,
 .footer__block__link:last-of-type {
   margin-left: 5px;
+}
+
+.modal-touch {
+  background: rgba(0, 0, 0, 0.2);
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.modal-touch-inside {
+  border-radius: var(--radius-small);
+  background: var(--color-white);
+  position: absolute;
+  padding: 30px;
+  width: 500px;
+  height: fit-content;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0; 
+}
+
+.modal-touch-inside-title {
+  font-weight: var(--medium);
+  font-size: 32px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.modal-touch-inside-text {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.modal-touch-inside-btn {
+  background: var(--color-white);
+  transition: var(--time);
+  border: var(--border);
+  padding: 11px 25px 11px 25px;
+  cursor: pointer;
+}
+
+.modal-touch-inside-btn:hover {
+  background: var(--color-black);
+  color: var(--color-white);
 }
 
 /* main */
@@ -263,7 +318,7 @@ a.header__block__link_active {
   left: 15px;
 }
 
-.header__title__download {
+.header__block__title__download {
   display: none;
   font-weight: var(--medium);
   font-size: 16px;
@@ -271,7 +326,6 @@ a.header__block__link_active {
   position: absolute;
   bottom: 93px;
   margin-left: 15px;
-
 }
 
 /* header */
@@ -927,12 +981,7 @@ a.header__block__link_active {
 }
 
 .email__title {
-  font-weight: var(--medium);
-  font-size: 70px;
-  line-height: 70px;
-  text-align: center;
   margin-bottom: 30px;
-  width: 100%;
 }
 
 .email__form {
@@ -956,13 +1005,13 @@ a.header__block__link_active {
   background: var(--color-light-green);
   color: var(--color-white);
   transition: var(--time);
-  margin-top: -6px;
   margin-left: 190px;
   width: 820px;
   cursor: pointer;
   line-height: 44px;
 }
 
+.modal-touch-inside-btn,
 .email__form__input, 
 .email__form__textarea,
 .email__form__submit {
@@ -1130,6 +1179,61 @@ a.header__block__link_active {
 
 
 @media screen and (max-width: 1250px) {
+  .mission__block__title {
+    font-size: 34px;
+    line-height: 34px;
+    width: 255px;
+    margin-left: 0;
+    margin-bottom: 60px;
+  }
+  
+  .title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .mission__title {
+    margin-top: 30px;
+  }
+
+  .mission__block__title__text {
+    margin-left: 65px;
+  }
+
+  .learn__cover__block__title,
+  .ads__company__title {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .blog {
+    margin-bottom: 50px;
+  }
+
+  .blog__title,
+  .platform__title,
+  .mission__block__text {
+    margin-bottom: 30px;
+  }
+
+  .modal-touch-inside-title,
+  .mission__block__text,
+  .blog__content__article__title,
+  .learn__cover__block__lessons,
+  .ads__company__inside__title {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  
+  .modal-touch-inside-text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .blog__content__article {
+    margin-bottom: 30px;
+  }
+
   .header__block__button:hover,
   .button-scroll:hover .button-scroll-title,
   .header__block__link:hover,
@@ -1175,7 +1279,6 @@ a.header__block__link_active {
   }
   
   .blog__title,
-  .mission__block__title,
   .ads__text,
   .learn__text,
   .learn__cover__block__title,
@@ -1219,6 +1322,13 @@ a.header__block__link_active {
     margin-right: 15px;
   }
 
+  .modal-touch-inside {
+    width: calc(100% - 90px);
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+
   .learn__cover__block__title {
     margin-top: 0;
   }
@@ -1226,6 +1336,11 @@ a.header__block__link_active {
   .mission,
   .offers__block__text {
     padding-top: 0;
+  }
+
+  .footer__block,
+  .offers__title {
+    margin-bottom: 30px;
   }
 
   .platform__block__text {
@@ -1278,8 +1393,8 @@ a.header__block__link_active {
 
   .email__form__submit {
     width: calc(100% - 46px);
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .blog__content__article:first-of-type {
@@ -1313,7 +1428,7 @@ a.header__block__link_active {
     display: flex;
   }
 
-  .header__title__download {
+  .header__block__title__download {
     display: block;
   }
 
@@ -1349,6 +1464,15 @@ a.header__block__link_active {
     margin-right: 0;
   }
 
+  .modal-touch-inside-btn:hover {
+    background: var(--color-white);
+    color: var(--color-black);
+  }
+
+  .modal-touch-inside-btn {
+    width: 100%;
+  }
+
   .footer__title,
   .offers__block {
     text-align: center;
@@ -1369,6 +1493,10 @@ a.header__block__link_active {
 
   .blog__content__article__img {
     height: auto;
+  }
+
+  .email {
+    margin-bottom: 60px;
   }
 
   .blog__content__article__title {
@@ -1392,8 +1520,12 @@ a.header__block__link_active {
     line-height: 28px;
   }
 
-  .email {
-    margin-bottom: 130px;
+  .email__form__input {
+    margin-bottom: 0;
+  }
+
+  .email__form {
+    height: 414px;
   }
 
   .email__form__input:first-of-type {
