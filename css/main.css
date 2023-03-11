@@ -1446,7 +1446,7 @@ a.header__block__link_active {
   .header__block {
     background: var(--color-white);
     transition: var(--time);
-    height: calc(var(--vh, 1vh) * 100);
+    min-height: calc(var(--vh, 1vh) * 100);
     position: fixed;
     width: 340px;
     left: 0;
