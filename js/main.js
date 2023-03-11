@@ -136,3 +136,6 @@ function CloseModal(ModalName){
   document.getElementById(ModalName).style.display='none';
   document.getElementsByTagName('body')[0].style.overflowY="scroll";
 }
+
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
