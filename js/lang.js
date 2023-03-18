@@ -48,8 +48,8 @@ let lang = {
     "es": "Nuestra misión"
   },
   "mission-text-2": {
-    "en": "В чем наша миссия по отношениию к блогеру в чем удобство использования с кем сотруд. приложение Мы хотим чтобы вы делали уверенно перевые шаги .в чем наша миссия по отношениию к блогеру в чем удобство использования с кем сотруд. приложение Мы хотим чтобы вы делалали уверенно перевые шаги .в чем наша миссия по отношениию к блогеру в чем удобство использования с кем сотруд. приложение Мы хотим чтобы вы делалали уверенно перевые шаги.",
-    "es": "Cuál es nuestra misión en relación al blogger, cuál es la facilidad de uso con quien trabajamos. app Queremos que des los primeros pasos con confianza cuál es nuestra misión en relación con el blogger cuál es la facilidad de uso con quien trabajamos. aplicación Queremos que des el primer paso con confianza cuál es nuestra misión en relación con el blogger cuál es la facilidad de uso con quien trabajamos. aplicación Queremos que des el primer paso con confianza."
+    "en": "Service, which is smart down to finest details. It is up to you how to run promotional campaign - manually, specifying topics, geo and coverage with convenient filter system, or trusting setup to our experts who will do everything for you!",
+    "es": "Service, which is smart down to finest details. It is up to you how to run promotional campaign - manually, specifying topics, geo and coverage with convenient filter system, or trusting setup to our experts who will do everything for you!"
   },
   "platform-faq-title-1": {
     "en": "How to earn with PostMarket?",
@@ -126,13 +126,5 @@ let lang = {
   "platform_block_text-10": {
     "en": "Requests for promotion on the cost-per-mille (CPM) basis may be available to any type of Postmarket users. However, the higher the blogger’s status (link to it), the more of such requests you will get from Postmarket. Some brands may invite you to be their ambassador in case they like the way you advertise something in a different format!",
     "es": "Las solicitudes publicitarias con pago sólo por publicación están accesibles para cualquier tipo de usuario de PostMarket. Pero mientras más alto sea tu estatus de bloguer, más solicitudes con pago por publicación recibirás de PostMarket. ¡Algunas marcas pueden elegirte como su embajador, si les agrada tus publicaciones en diferentes formatos! Las solicitudes publicitarias con pago sólo por publicación están accesibles para cualquier tipo de usuario de PostMarket. Pero mientras más alto sea tu estatus de bloguer, más solicitudes con pago por publicación recibirás de PostMarket. ¡Algunas marcas pueden elegirte como su embajador, si les agrada tus publicaciones en diferentes formatos!"
-  },
-  "platform-faq-title-10": {
-    "en": "What is the blogger’s status and what does it mean?",
-    "es": "¿Qué es el Estatus de Bloguer y qué es lo que hace?"
-  },
-  "platform_block_text-11": {
-    "en": "The blogger’s status determines the number and the quality of the requests you see in My Applications chapter. The better you complete applications seeking promotion, and the more of them you take up, the higher is your status!",
-    "es": "El estatus de bloguer determina la cantidad y calidad de propuestas que ves en la sección de “mis aplicaciones”. Mientras mejor realices las solicitudes publicitarias, mientras más trabajes en ellas, más alto será tu estatus. Más información sobre estatus aquí."
-  },
+  }
 }

@@ -3,8 +3,6 @@
 :root {
   --base-width: 1200px;
   --color-black: #000;
-  --color-green: #dbea8d;
-  --color-pink: #f048be;
   --color-white: #fcfcfc;
   --color-light-green: #a2c1c4;
   --color-dark-gray: #a9a9a9;
@@ -21,6 +19,7 @@
 * {
   margin: 0 auto;
   padding: 0;
+  box-sizing: border-box;
 }
 
 
@@ -41,10 +40,6 @@ body {
   background: var(--color-white);
   color: var(--color-black);
   font-family: 'Montserrat', sans-serif;
-}
-
-form {
-  height: 100%;
 }
 
 input, textarea {
@@ -71,23 +66,15 @@ section {
   line-height: 48px;
 }
 
-.line {
-  background: var(--color-black);
-  width: var(--base-width);
-  height: 2px;
-  position: absolute;
-  margin-top: -35px;
-}
-
 .upper {
   text-transform: uppercase;
 }
 
 .button-scroll {
   border-radius: var(--radius-small);
-  background: var(--color-green);
+  background: var(--color-black);
   transition: var(--time);
-  display: none;
+  border: 2px solid var(--color-black);
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -95,17 +82,18 @@ section {
   padding: 15px 20px 15px 20px;
 }
 
+.button-scroll:hover {
+  background: var(--color-gray);
+}
+
 .button-scroll-title {
+  color: var(--color-white);
   font-weight: var(--medium);
   font-size: 16px;
 }
 
-.button-scroll:hover {
-  background: var(--color-black);
-}
-
 .button-scroll:hover .button-scroll-title {
-  color: var(--color-white);
+  color: var(--color-black);
 } 
 
 .download {
@@ -227,7 +215,7 @@ section {
   font-size: 20px;
   line-height: 48px;
   margin-left: 0;
-  margin-right: 65px;
+  margin-right: 67px;
   z-index: 1;
 }
 
@@ -257,7 +245,7 @@ a.header__block__link_active {
   text-align: center;
   line-height: 44px;
   display: inline-block;
-  margin-left: 64px;
+  margin-left: 66px;
 }
 
 .header__menu,
@@ -324,7 +312,7 @@ a.header__block__link_active {
   font-size: 16px;
   line-height: 16px;
   position: absolute;
-  bottom: 93px;
+  bottom: 83px;
   margin-left: 15px;
 }
 
@@ -341,7 +329,6 @@ a.header__block__link_active {
 
 .mission__title {
   margin-bottom: 30px;
-  width: 700px;
 }
 
 .mission__block {
@@ -406,6 +393,7 @@ a.header__block__link_active {
   font-size: 18px;
   line-height: 24px;
   width: 700px;
+  margin-left: 0;
 }
 
 .mission .container:nth-child(3) {
@@ -497,27 +485,21 @@ a.header__block__link_active {
 .ads__company {
   border-radius: var(--radius-big);
   padding: 15px;
+  background: var(--color-gray);
 }
 
 .container:nth-child(2) .ads__company:first-child {
   margin-right: 10px;
 }
 
-.container:nth-child(2) .ads__company {
-  background: url("../img/cover/cover-1.png") no-repeat center;
-  background-size: cover;
-}
-
 .container:nth-child(3) .ads__company {
-  background: url("../img/cover/cover-2.png") no-repeat center;
-  background-size: cover;
   width: 100%;
   margin-top: 10px;
   display: flex;
 }
 
 .container:nth-child(3) .ads__company__inside {
-  width: 505px;
+  width: 565px;
   margin-right: 0;
 }
 
@@ -526,7 +508,7 @@ a.header__block__link_active {
 }
 
 .ads__company__inside {
-  background: var(--color-gray);
+  background: var(--color-white);
   border-radius: var(--radius-big);
   padding: 30px;
 }
@@ -548,23 +530,38 @@ a.header__block__link_active {
 .ads__company__inside__social {
   display: flex;
   margin-bottom: 30px;
-}
+} 
 
 .ads__company__inside__social__title {
   background: var(--color-black);
   border-radius: var(--radius-big);
-  color: var(--color-white);
-  font-weight: var(--light);
-  font-size: 16px;
-  line-height: 16px;
-  padding: 16px 24px 16px 24px;
   margin: 0;
 }
 
-.ads__company__inside__social__title:nth-child(2),
-.ads__company__inside__social__title:nth-child(3) {
+.ads__company__inside__social__title:nth-child(2) {
   margin-left: 5px;
 } 
+
+.ads__company__inside__social__title:before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-top: 14px;
+  margin-left: 14px;
+}
+
+.ads__company__inside__social__title_instagram::before {
+  background: url("../img/social/instagram-light.svg");
+}
+
+.ads__company__inside__social__title_tiktok:before {
+  background: url("../img/social/tiktok-light.svg");
+}
+
+.ads__company__inside__social__title {
+  width: 48px;
+}
 
 .ads__company__inside__block__ptice {
   border-radius: var(--radius-big);
@@ -577,14 +574,8 @@ a.header__block__link_active {
   margin: 0;
 }
 
-.ads__company__inside__block__price_active {
-  background: var(--color-green);
-  margin-left: 5px;
-}
-
 .ads__company__title {
   font-weight: var(--medium);
-  color: var(--color-white);
   font-size: 36px;
   line-height: 36px;
   width: 250px;
@@ -633,9 +624,9 @@ a.header__block__link_active {
   border-radius: var(--radius-big);
   background: var(--color-gray);
   position: relative;
-  z-index: -2;
   display: flex;
   padding: 35px;
+  height: 665px;
 }
 
 .learn__cover__block__title {
@@ -657,7 +648,7 @@ a.header__block__link_active {
 }
 
 .learn__cover__block__price {
-  color: var(--color-pink);
+  color: var(--color-light-green);
   font-weight: var(--medium);
   font-size: 18px;
   line-height: 18px;
@@ -689,17 +680,6 @@ a.header__block__link_active {
   line-height: 20px;
   text-align: center;
   width: 335px;
-}
-
-.learn__cover__block__cover:before {
-  background: url("../img/icon/learn-icon-1.svg") no-repeat center;
-  height: 235px;
-  width: 485px;
-  margin-top: 50px;
-  margin-left: 30px;
-  position: absolute;
-  content: "";
-  z-index: -1;
 }
 
 .learn__cover__block:first-of-type {
@@ -764,11 +744,11 @@ a.header__block__link_active {
   font-size: 16px;
   line-height: 24px;
   margin-right: 68px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 
 .platform__block__text__link {
-  color: var(--color-pink);
+  color: var(--color-light-green);
   transition: var(--time);
 }
 
@@ -821,7 +801,7 @@ a.header__block__link_active {
 
 .blog__content__article {
   background: var(--color-gray);
-  width: 560px;
+  width: 50%;
   padding: 20px;
   border-radius: 30px;
   margin-bottom: 60px;
@@ -837,21 +817,6 @@ a.header__block__link_active {
   display: block;
   width: 100%;
   margin-bottom: 15px;
-}
-
-.blog__content__article__img_cover:before {
-  position: absolute;
-  content: "";
-  height: 270px;
-  width: 545px;
-}
-
-.blog__content__article__img_cover-1:before {
-  background: url("../img/icon/blog-icon-1.svg");
-}
-
-.blog__content__article__img_cover-2:before {
-  background: url("../img/icon/blog-icon-2.svg");
 }
 
 .blog__content__article__title {
@@ -955,8 +920,8 @@ a.header__block__link_active {
   font-weight: var(--light);
   padding-left: 25px;
   padding-right: 25px;
-  line-height: 44px;
-  height: 44px;
+  line-height: 48px;
+  height: 48px;
   font-size: 16px;
   margin: 0 0 0 5px;
   cursor: pointer;
@@ -988,6 +953,7 @@ a.header__block__link_active {
   border-radius: var(--radius-small);
   background: var(--color-gray);
   height: 446px;
+  display: flex;
 }
 
 .email__form__input, 
@@ -1001,11 +967,11 @@ a.header__block__link_active {
 }
 
 .email__form__submit {
-  border: 2px solid var(--color-light-green);
-  background: var(--color-light-green);
+  border: 2px solid var(--color-black);
+  background: var(--color-black);
   color: var(--color-white);
   transition: var(--time);
-  margin-left: 190px;
+  display: block;
   width: 820px;
   cursor: pointer;
   line-height: 44px;
@@ -1021,34 +987,32 @@ a.header__block__link_active {
 }
 
 .email__form__submit:hover {
-  border: 2px solid var(--color-light-green);
-  color: var(--color-light-green);
+  color: var(--color-black);
   background: var(--color-gray);
 }
 
+.email__form__submit:hover,
 .email__form__input:focus,
 .email__form__textarea:focus {
-  border: 2px solid var(--color-light-green);
+  border: 2px solid var(--color-black);
 }
 
 .email__form__input {
-  width: 366px;
+  width: 400px;
   line-height: 44px;
   margin-top: 70px;
 }
 
 .email__form__input:first-of-type {
   margin-right: 20px;
-  margin-left: 190px;
 }
 
 .email__form__textarea {
-  width: 786px;
-  min-height: 136px;
+  display: block;
+  width: 820px;
+  height: 170px;
   resize: none;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-left: 190px;
+  padding: 15px;
 }
 
 ::placeholder { 
@@ -1083,7 +1047,7 @@ a.header__block__link_active {
   font-weight: var(--medium);
   font-size: 16px;
   line-height: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .footer__title {
@@ -1266,14 +1230,13 @@ a.header__block__link_active {
 
   .email__form__submit:hover {
     color: var(--color-white);
-    background: var(--color-light-green);
+    background: var(--color-black);
   }
 
   .mission .mission__block:nth-child(2),
   .mission .mission__block:nth-child(3),
   .learn__cover .leart__cover__block:nth-child(2),
   .offers__block img,
-  .learn__cover__block__cover:before,
   .blog__content__article__img_cover {
     display: none;
   }
@@ -1290,7 +1253,9 @@ a.header__block__link_active {
   .offers__title,
   .platform__block__text,
   .blog__content__article__text,
-  .blog__content__article__title {
+  .blog__content__article__title,
+  .container:nth-child(3) .ads__company__inside,
+  .blog__content__article {
     width: 100%;
   }
 
@@ -1305,16 +1270,10 @@ a.header__block__link_active {
     display: block;
   }
 
-  .container:nth-child(3) .ads__company,
   .platform__line,
-  .line,
   .header__block__button,
   .container {
     width: calc(100% - 30px);
-  }
-
-  .container:nth-child(3) .ads__company__inside {
-    width: calc(100% - 60px);
   }
 
   .container {
@@ -1328,6 +1287,9 @@ a.header__block__link_active {
     margin-right: 15px;
   }
 
+  .learn__cover {
+    height: 492px;
+  }
 
   .learn__cover__block__title {
     margin-top: 0;
@@ -1358,37 +1320,9 @@ a.header__block__link_active {
     width: 110px;
     height: 53px;
     padding-top: 5px;
-    margin-top: -89px;
+    margin-top: -84px;
     margin-right: 0px;
     position: relative;
-  }
-
-  .ads__company__inside__social__title:before {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 20px;
-    margin-top: 14px;
-    margin-left: 14px;
-  }
-
-  .ads__company__inside__social__title:nth-child(1):before {
-    background: url("../img/social/instagram-light.svg");
-  }
-
-  .ads__company__inside__social__title:nth-child(2):before {
-    background: url("../img/social/tiktok-light.svg");
-  }
-
-  .ads__company__inside__social__title:nth-child(3):before {
-    background: url("../img/social/youtube-light.svg");
-  }
-
-  .ads__company__inside__social__title {
-    font-size: 0;
-    width: 48px;
-    height: 48px;
-    padding: 0;
   }
 
   .email__form__submit {
@@ -1487,10 +1421,6 @@ a.header__block__link_active {
     flex-direction: column;
   }
 
-  .blog__content__article {
-    width: calc(100% - 40px);
-  }
-
   .blog__content__article__img {
     height: auto;
   }
@@ -1530,14 +1460,14 @@ a.header__block__link_active {
 
   .email__form__input:first-of-type {
     margin-left: 20px;
-    width: calc(100% - 80px);
+    width: calc(100% - 40px);
   }
 
   .email__form__input, 
   .email__form__textarea {
     margin-top: 20px;
     margin-left: 20px;
-    width: calc(100% - 80px);
+    width: calc(100% - 40px);
   }
 
   section {
