@@ -506,7 +506,7 @@ a.header__block__link_active {
 }
 
 .container:nth-child(3) .ads__company__title {
-  margin: auto 0 auto 0;
+  margin: auto 28px auto 28px;
 }
 
 .ads__company__inside {
@@ -581,7 +581,7 @@ a.header__block__link_active {
   font-size: 36px;
   line-height: 36px;
   width: 250px;
-  margin: 35px 10px 50px 10px;
+  margin: 35px 28px 50px 28px;
 }
 
 .ads__company__inside__block {
