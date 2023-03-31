@@ -329,6 +329,7 @@ a.header__block__link_active {
 
 .mission__title {
   margin-bottom: 30px;
+  margin-left: 330px;
 }
 
 .mission__block {
@@ -393,11 +394,12 @@ a.header__block__link_active {
   font-size: 18px;
   line-height: 24px;
   width: 700px;
-  margin-left: 0;
+  margin-left: 330px;
 }
 
 .mission .container:nth-child(3) {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 /* mission */
@@ -1305,6 +1307,8 @@ a.header__block__link_active {
     margin-bottom: 30px;
   }
 
+  .mission__title,
+  .mission__text,
   .platform__block__text {
     margin-left: 0;
   }
