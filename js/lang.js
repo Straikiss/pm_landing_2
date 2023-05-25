@@ -28,7 +28,7 @@ let lang = {
     "es": "Blog"
   },
   "header-clients": {
-    "en": "Advertisers",
+    "en": "For Advertisers",
     "es": "Clientes"
   },
   "mission-title": {
