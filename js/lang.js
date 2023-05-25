@@ -12,7 +12,7 @@ let lang = {
     "es": "Recibe ofertas"
   },
   "header-ads": {
-    "en": "Buying ads",
+    "en": "Ads",
     "es": "Compra de anuncios"
   },
   "header-learn": {
@@ -20,7 +20,7 @@ let lang = {
     "es": "Aprender"
   },
   "header-platform": {
-    "en": "Platform work",
+    "en": "FAQ",
     "es": "Trabajo de plataforma"
   },
   "header-blog": {
@@ -28,7 +28,7 @@ let lang = {
     "es": "Blog"
   },
   "header-clients": {
-    "en": "Clients",
+    "en": "Advertisers",
     "es": "Clientes"
   },
   "mission-title": {
@@ -40,7 +40,7 @@ let lang = {
     "es": "+ aprende y promociona 🔥 tu cuenta con nosotros 🤍"
   },
   "mission-qr": {
-    "en": "Point your smartphone camera and download the app",
+    "en": "Scan the QR and get access to the app!",
     "es": "Apunta la cámara de tu smartphone y descarga la aplicación"
   },
   "mission-title-2": {
@@ -48,7 +48,7 @@ let lang = {
     "es": "Nuestra misión"
   },
   "mission-text-2": {
-    "en": "Service, which is smart down to finest details. It is up to you how to run promotional campaign - manually, specifying topics, geo and coverage with convenient filter system, or trusting setup to our experts who will do everything for you!",
+    "en": "Our mission is to provide an opportunity for growth on social media. No matter how big or small your audience is, you can use PostMarket to grow a loyal following, to earn and learn by promoting brands you love",
     "es": "Service, which is smart down to finest details. It is up to you how to run promotional campaign - manually, specifying topics, geo and coverage with convenient filter system, or trusting setup to our experts who will do everything for you!"
   },
   "platform-faq-title-1": {
