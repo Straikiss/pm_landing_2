@@ -42,7 +42,8 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-input, textarea {
+input,
+textarea {
   outline: none;
 }
 
@@ -94,7 +95,7 @@ section {
 
 .button-scroll:hover .button-scroll-title {
   color: var(--color-black);
-} 
+}
 
 .download {
   transition: var(--time);
@@ -106,20 +107,20 @@ section {
   content: "";
 }
 
-.download_apple, 
+.download_apple,
 .download_apple:before,
-.download_google, 
+.download_google,
 .download_google:before {
   height: 48px;
 }
 
-.download_apple, 
-.download_apple:before  {
+.download_apple,
+.download_apple:before {
   width: 143px;
 }
 
-.download_google, 
-.download_google:before  {
+.download_google,
+.download_google:before {
   width: 162px;
 }
 
@@ -129,7 +130,7 @@ section {
 
 .download_google {
   background: url("../img/download/en/google-light.svg");
-} 
+}
 
 .download_apple:hover {
   background: url("../img/download/en/apple-dark.svg");
@@ -166,7 +167,7 @@ section {
   bottom: 0;
   right: 0;
   left: 0;
-  top: 0; 
+  top: 0;
 }
 
 .modal-touch-inside-title {
@@ -427,6 +428,7 @@ a.header__block__link_active {
   display: flex;
   padding-top: 35px;
   padding-bottom: 35px;
+  align-items: center;
 }
 
 .offers__block:last-of-type {
@@ -435,6 +437,7 @@ a.header__block__link_active {
 
 .offers__block__title {
   width: 280px;
+
 }
 
 .offers__block__text {
@@ -443,7 +446,7 @@ a.header__block__link_active {
   line-height: 32px;
 }
 
-.offers__block__text, 
+.offers__block__text,
 .offers__block__title {
   font-weight: var(--medium);
 }
@@ -453,7 +456,7 @@ a.header__block__link_active {
   width: 320px;
 }
 
-.offers__block__tag, 
+.offers__block__tag,
 .offers__block__title {
   font-size: 20px;
   line-height: 20px;
@@ -478,7 +481,7 @@ a.header__block__link_active {
   width: 540px;
   margin-left: 0;
   margin-bottom: 45px;
-} 
+}
 
 .ads .container:nth-child(1) {
   display: block;
@@ -532,7 +535,7 @@ a.header__block__link_active {
 .ads__company__inside__social {
   display: flex;
   margin-bottom: 30px;
-} 
+}
 
 .ads__company__inside__social__title {
   background: var(--color-black);
@@ -542,7 +545,7 @@ a.header__block__link_active {
 
 .ads__company__inside__social__title:nth-child(2) {
   margin-left: 5px;
-} 
+}
 
 .ads__company__inside__social__title:before {
   position: absolute;
@@ -620,7 +623,7 @@ a.header__block__link_active {
   width: 540px;
   margin-left: 0;
   margin-bottom: 45px;
-} 
+}
 
 .learn__cover {
   border-radius: var(--radius-big);
@@ -782,7 +785,7 @@ a.header__block__link_active {
 }
 
 .platform__faq_active,
-.platform__faq:hover .platform__faq__title, 
+.platform__faq:hover .platform__faq__title,
 .platform__faq:hover:after {
   color: var(--color-light-green);
 }
@@ -958,7 +961,7 @@ a.header__block__link_active {
   display: flex;
 }
 
-.email__form__input, 
+.email__form__input,
 .email__form__textarea {
   border: 2px solid var(--color-white);
   background: var(--color-white);
@@ -980,7 +983,7 @@ a.header__block__link_active {
 }
 
 .modal-touch-inside-btn,
-.email__form__input, 
+.email__form__input,
 .email__form__textarea,
 .email__form__submit {
   font-weight: var(--medium);
@@ -1017,12 +1020,12 @@ a.header__block__link_active {
   padding: 15px;
 }
 
-::placeholder { 
+::placeholder {
   color: var(--color-black);
   opacity: 1;
 }
 
-:-ms-input-placeholder { 
+:-ms-input-placeholder {
   color: var(--color-black);
 }
 
@@ -1074,7 +1077,7 @@ a.header__block__link_active {
   display: inline-block;
   width: 128px;
   height: 48px;
-  margin: 0; 
+  margin: 0;
 }
 
 .footer__block__method:before {
@@ -1085,7 +1088,7 @@ a.header__block__link_active {
   margin: 0 0 0px 30px;
 }
 
-.footer__block__method_paypal:before  {
+.footer__block__method_paypal:before {
   background: url("../img/payment/paypal.svg");
 }
 
@@ -1114,7 +1117,7 @@ a.header__block__link_active {
 
 .footer__block__link_tiktok:before {
   background: url("../img/social/tiktok-dark.svg");
-} 
+}
 
 .footer__block__link:hover.footer__block__link_tiktok:before {
   background: url("../img/social/tiktok-light.svg");
@@ -1152,7 +1155,7 @@ a.header__block__link_active {
     margin-left: 0;
     margin-bottom: 60px;
   }
-  
+
   .title {
     font-size: 30px;
     line-height: 30px;
@@ -1190,7 +1193,7 @@ a.header__block__link_active {
     font-size: 22px;
     line-height: 22px;
   }
-  
+
   .modal-touch-inside-text {
     font-size: 18px;
     line-height: 24px;
@@ -1207,12 +1210,12 @@ a.header__block__link_active {
   .platform__faq:hover:after {
     color: var(--color-black);
   }
-  
+
   .platform__faq.platform__faq_active:hover .platform__faq__title,
   .platform__faq.platform__faq_active:hover.platform__faq:hover:after {
     color: var(--color-light-green);
   }
- 
+
   .blog__content__article__read__link:hover {
     background: var(--color-light-green);
   }
@@ -1242,7 +1245,7 @@ a.header__block__link_active {
   .blog__content__article__img_cover {
     display: none;
   }
-  
+
   .blog__title,
   .ads__text,
   .learn__text,
@@ -1268,7 +1271,7 @@ a.header__block__link_active {
   .ads .container:nth-child(2),
   .footer .container,
   .header__menu,
-  .header__block__menu  {
+  .header__block__menu {
     display: block;
   }
 
@@ -1361,7 +1364,7 @@ a.header__block__link_active {
   .container:nth-child(3) .ads__company__title {
     margin: 35px 10px 50px 10px;
   }
- 
+
   .header__block__download {
     display: flex;
   }
@@ -1440,7 +1443,7 @@ a.header__block__link_active {
   .footer__block__link:hover.footer__block__link_tiktok:before {
     background: url("../img/social/tiktok-dark.svg");
   }
-  
+
   .footer__block__link:hover.footer__block__link_instagram:before {
     background: url("../img/social/instagram-dark.svg");
   }
@@ -1467,7 +1470,7 @@ a.header__block__link_active {
     width: calc(100% - 40px);
   }
 
-  .email__form__input, 
+  .email__form__input,
   .email__form__textarea {
     margin-top: 20px;
     margin-left: 20px;
