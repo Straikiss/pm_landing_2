@@ -1,11 +1,17 @@
+<!-- @using PostMarket.Core.Helpers
+@using PostMarket.Shared.Enums;
+@{
+	Page.CleanPage = true;
+} -->
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blogger - PostMarket</title>
+    <title>System to buy promotion from Instagram and TikTok users - PostMarket</title>
     <meta charset="utf-8">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
-    <link rel="shortcut icon" type="image/x-icon" href="https://postmarket.pro/content/favicon/favicon.png">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="content/img/favicon/favicon.png">
+    <link rel="stylesheet" href="content/css/main.css">
   </head>
   <body>
     <header class="header">
@@ -16,15 +22,14 @@
           <div class="header__block__menu header__block__menu_close" onclick="CloseMenu();"></div>
           <a class="header__block__link upper lng-header-mission" href="#mission" onclick="CloseMenu();">Our mission</a>
           <a class="header__block__link upper lng-header-offers" href="#offers" onclick="CloseMenu();">Get offers</a>
-          <a class="header__block__link upper lng-header-ads" href="#ads" onclick="CloseMenu();">Buying ads</a>
+          <a class="header__block__link upper lng-header-ads" href="#ads" onclick="CloseMenu();">Earn</a>
           <a class="header__block__link upper lng-header-learn" href="#learn" onclick="CloseMenu();">Learn</a>
-          <a class="header__block__link upper lng-header-platform" href="#platform" onclick="CloseMenu();">Platform work</a>
+          <a class="header__block__link upper lng-header-platform" href="#platform" onclick="CloseMenu();">FAQ</a>
           <a class="header__block__link upper lng-header-blog" href="#blog" onclick="CloseMenu();">Blog</a>
-          <a class="header__block__button upper lng-header-clients" href="advertiser.html">Clients</a>
           <p class="header__block__title__download upper">Download App</p>
           <div class="header__block__download">
-            <a onmouseover="dark('apple')" onmouseout="light('apple')" class="download download_apple" href="https://apps.apple.com/app/id1512915732" target="_blank"></a>
-            <a onmouseover="dark('google')" onmouseout="light('apple')" class="download download_google" href="https://play.google.com/store/apps/details?id=pro.postmarket" target="_blank"></a>
+            <a class="download download_apple" href="https://apps.apple.com/app/id1512915732" target="_blank"></a>
+            <a class="download download_google" href="https://play.google.com/store/apps/details?id=pro.postmarket" target="_blank"></a>
           </div>
         </div>
       </div>
@@ -45,13 +50,13 @@
       </div>
       <div class="container">
         <div class="mission__block">
-          <a onmouseover="dark('apple')" onmouseout="light('apple')" class="download download_apple" href="https://apps.apple.com/app/id1512915732" target="_blank"></a>
-          <a onmouseover="dark('google')" onmouseout="light('google')" class="download download_google" href="https://play.google.com/store/apps/details?id=pro.postmarket" target="_blank"></a>
+          <a class="download download_apple" href="https://apps.apple.com/app/id1512915732" target="_blank"></a>
+          <a class="download download_google" href="https://play.google.com/store/apps/details?id=pro.postmarket" target="_blank"></a>
         </div>
       </div>
       <div class="container">
         <h2 class="mission__title title upper lng-mission-title-2">Our mission</h2>
-        <p class="mission__text lng-mission-text-2">Service, which is smart down to finest details. It is up to you how to run promotional campaign - manually, specifying topics, geo and coverage with convenient filter system, or trusting setup to our experts who will do everything for you!</p>
+        <p class="mission__text lng-mission-text-2">Our mission is to provide an opportunity for growth on social media. No matter how big or small your audience is, you can use PostMarket to grow a loyal following, to earn and learn by promoting brands you love.</p>
       </div>
     </section>
     <section class="offers" id="offers">
@@ -61,58 +66,50 @@
       <div class="container">
         <div class="offers__block">
           <p class="offers__block__text">1</p>
-          <p class="offers__block__title upper">Get advertising offers from brands</p>
-          <p class="offers__block__tag upper">Пройди регистрацию, тебе нужно 300 followers</p>
-          <img src="img/icon/offers-icon-1.svg" alt="offer-icon-1" draggable="false">
+          <p class="offers__block__title upper">Choose 🤔</p>
+          <p class="offers__block__tag upper">FIND AN OFFER WHICH LIKE!</p>
+          <img src="content/img/icon/offers-icon-1.svg" alt="offer-icon-1" draggable="false">
         </div>
         <div class="offers__block">
           <p class="offers__block__text">2</p>
-          <p class="offers__block__title upper">Get advertising offers from brands</p>
-          <p class="offers__block__tag upper">Пройди регистрацию, тебе нужно 300 followers</p>
-          <img src="img/icon/offers-icon-2.svg" alt="offer-icon-2" draggable="false">
+          <p class="offers__block__title upper">Accept 👍</p>
+          <p class="offers__block__tag upper">LOOK INTO THE DETAILS</p>
+          <img src="content/img/icon/offers-icon-2.svg" alt="offer-icon-2" draggable="false">
         </div>
         <div class="offers__block">
           <p class="offers__block__text">3</p>
-          <p class="offers__block__title upper">Get advertising offers from brands</p>
-          <p class="offers__block__tag upper">Пройди регистрацию, тебе нужно 300 followers</p>
-          <img src="img/icon/offers-icon-3.svg" alt="offer-icon-3" draggable="false">
+          <p class="offers__block__title upper">Advertise 📈</p>
+          <p class="offers__block__tag upper">START PROMOTING, EARNING AND GROWING YOU SOCIAL PRESENCE!</p>
+          <img src="content/img/icon/offers-icon-3.svg" alt="offer-icon-3" draggable="false">
         </div>
       </div>
     </section> 
     <section class="ads" id="ads">
       <div class="container">
-        <h2 class="ads__title title upper">Buying ADS</h2>
-        <p class="ads__text">The influencer has access to all the campaigns of the brand, which gives you maximum opportunities.</p>
+        <h2 class="ads__title title upper">Earn</h2>
       </div>
       <div class="container">
         <div class="ads__company">
           <h2 class="ads__company__title upper">Pay for Followers</h2>
           <div class="ads__company__inside">
             <div class="ads__company__inside__social">
-              <div class="ads__company__inside__social__title ads__company__inside__social__title_instagram upper"></div>
+              <div class="ads__company__inside__social__title ads__company__inside__social__title_instagram"></div>
               <p class="ads__company__inside__social__text upper">Platform</p>
             </div>
             <h3 class="ads__company__inside__title upper">Get active  followerss to your blog</h3>
-            <p class="ads__company__inside__text">With a large real audience, you can charge more for your advertising services with PostMarket. Launch promotion at cost per subscriber.</p>
-            <div class="ads__company__inside__block"> 
-              <p class="ads__company__inside__block__ptice">$100</p>
-              <p class="ads__company__inside__block__text upper">Balance</p>
-            </div>
+            <p class="ads__company__inside__text">Earn money by promoting other accounts social media accounts! You get paid for every new active follower you bring to the account you promote.</p>
           </div>
         </div>
         <div class="ads__company">
           <h2 class="ads__company__title upper">Pay for Outreach</h2>
           <div class="ads__company__inside">
             <div class="ads__company__inside__social">
-              <div class="ads__company__inside__social__title ads__company__inside__social__title_instagram upper"></div>
+              <div class="ads__company__inside__social__title ads__company__inside__social__title_instagram"></div>
+              <div class="ads__company__inside__social__title ads__company__inside__social__title_tiktok"></div>
               <p class="ads__company__inside__social__text upper">Platform</p>
             </div>
             <h3 class="ads__company__inside__title upper">Get active  followerss to your blog</h3>
-            <p class="ads__company__inside__text">With a large real audience, you can charge more for your advertising services with PostMarket. Launch promotion at cost per subscriber.</p>
-            <div class="ads__company__inside__block"> 
-              <p class="ads__company__inside__block__ptice">$100</p>
-              <p class="ads__company__inside__block__text upper">Balance</p>
-            </div>
+            <p class="ads__company__inside__text">It is important to create high-quality promos, which will help you reach a wider audience. You'll earn a certain amount for every 1000 promo views.</p>
           </div>
         </div>
       </div>
@@ -121,16 +118,12 @@
           <h2 class="ads__company__title upper">Pay for results</h2>
           <div class="ads__company__inside">
             <div class="ads__company__inside__social">
-              <div class="ads__company__inside__social__title ads__company__inside__social__title_instagram upper"></div>
-              <div class="ads__company__inside__social__title ads__company__inside__social__title_tiktok upper"></div>
+              <div class="ads__company__inside__social__title ads__company__inside__social__title_instagram"></div>
+              <div class="ads__company__inside__social__title ads__company__inside__social__title_tiktok"></div>
               <p class="ads__company__inside__social__text upper">Platform</p>
             </div>
             <h3 class="ads__company__inside__title upper">Get active  followerss to your blog</h3>
-            <p class="ads__company__inside__text">With a large real audience, you can charge more for your advertising services with PostMarket. Launch promotion at cost per subscriber.</p>
-            <div class="ads__company__inside__block"> 
-              <p class="ads__company__inside__block__ptice">$100</p>
-              <p class="ads__company__inside__block__text upper">Balance</p>
-            </div>
+            <p class="ads__company__inside__text">Choose offers that are based on payment for registrations, app downloads, product purchases, and similar models, enabling you to earn a profit for every goal you achieve.</p>
           </div>
         </div>
       </div>
@@ -138,17 +131,14 @@
     <section class="learn" id="learn">
       <div class="container">
         <h2 class="learn__title title upper">Learn</h2>
-        <p class="learn__text">With us you can take your steps confidently, we have collected the necessary training for an influencer</p>
       </div>
       <div class="container">
         <div class="learn__cover">
           <div class="learn__cover__block">
             <h3 class="learn__cover__block__title upper">We can help you develop your account</h3>
-            <p class="learn__cover__block__text">Everything you need to get started</p>
-            <p class="learn__cover__block__price">$10.00</p>
-            <p class="learn__cover__block__lessons upper">15 training lessons <br> + interesting quizzes</p>
-            <p class="learn__cover__block__time">Training time 10 hours</p>
-            <p class="learn__cover__block__more">Description of what the course can teach and for whom it is created.</p>
+            <p class="learn__cover__block__text">Everything you need to get start for just</p>
+            <p class="learn__cover__block__price">$7.99/month</p>
+            <p class="learn__cover__block__more">Our comprehensive guidance and educational resources empower you to become a thriving influencer, guiding you through the process every step of the way until you make your first penny.</p>
           </div>
           <div class="leart__cover__block">
             <div class="learn__cover__block__img"></div>
@@ -159,7 +149,7 @@
     </section>
     <section class="platform" id="platform">
       <div class="container">
-        <h2 class="platform__title title upper">Platform Work</h2>
+        <h2 class="platform__title title upper">FAQ</h2>
       </div>
       <div class="container">
         <div class="platform__faq">
@@ -222,7 +212,7 @@
     </section>
     <section class="blog" id="blog">
       <div class="container">
-        <h2 class="blog__title title upper">Our Blog</h2>
+        <h2 class="blog__title title upper">Blog</h2>
       </div>
       <div class="container">
         <div class="blog__tab">
@@ -239,7 +229,6 @@
               </a>
             </div>
             <h3 class="blog__content__article__title">Influencer Outreach - Proven Ways to Increase Conversion</h3>
-            <p class="blog__content__article__text">Если вы прочитаете, то поймете как можно повысить стоимость рекламы на своем аккаунте</p>
           </div>
           <div class="blog__content__article">
             <img class="blog__content__article__img" src="https://postmarketstorage1.blob.core.windows.net/articles/article213.jpg" alt="Five Things About Influencer & TikTok Stars to Know Before Hiring" draggable="false">
@@ -250,7 +239,6 @@
               </a>
             </div>
             <h3 class="blog__content__article__title">Five Things About Influencer & TikTok Stars to Know Before</h3>
-            <p class="blog__content__article__text">Если вы прочитаете, то поймете как можно повысить стоимость рекламы на своем аккаунте</p>
           </div>
         </div>
         <div class="blog__content" id="tabLink2">
@@ -263,7 +251,6 @@
               </a>
             </div>
             <h3 class="blog__content__article__title">Brand Deals for TikTok Influencers that are Easy to Get</h3>
-            <p class="blog__content__article__text">Если вы прочитаете, то поймете как можно повысить стоимость рекламы на своем аккаунте</p>
           </div>
           <div class="blog__content__article">
             <img class="blog__content__article__img" src="https://postmarketstorage1.blob.core.windows.net/articles/article211.jpg" alt="Niche Influencer Marketing - 5 Proven Ways to Build Your Brand" draggable="false">
@@ -274,7 +261,7 @@
               </a>
             </div>
             <h3 class="blog__content__article__title">Niche Influencer Marketing - 5 Proven Ways to Build Your</h3>
-            <p class="blog__content__article__text">Если вы прочитаете, то поймете как можно повысить стоимость рекламы на своем аккаунте</p>
+            <p class="blog__content__article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
           </div>
         </div>
       </div>
@@ -282,14 +269,14 @@
         <a class="blog__more upper" href="https://postmarket.pro/blog" target="_blank">See more</a>
       </div>
     </section>
-    <section class="email">
+    <section class="email animate">
       <div class="container">
         <h2 class="email__title title upper">Get in Touch</h2>
         <div class="email__form">
           <form action="" method="">
-            <input class="email__form__input" type="text" name="name" placeholder="Name" required>
-            <input class="email__form__input" type="text" name="email" placeholder="Email" required>
-            <textarea class="email__form__textarea" name="textarea" placeholder="Your Message" required></textarea>
+            <input class="email__form__input" type="text" name="name" placeholder="Name" required="">
+            <input class="email__form__input" type="text" name="email" placeholder="Email" required="">
+            <textarea class="email__form__textarea" name="textarea" placeholder="Your Message" required=""></textarea>
             <button class="email__form__submit upper" type="submit" onclick="OpenModal('modal-touch');">Get in Touch</button>
           </form>
         </div>
@@ -298,18 +285,9 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__block">
-          <p class="footer__block__title upper">Follow Us</p>
-          <a class="footer__block__link footer__block__link_instagram" href="https://www.instagram.com/postmarketpro" target="_blank">
-            <span class="footer__block__link__text">Instagram</span>
-          </a>
-          <a class="footer__block__link footer__block__link_tiktok" href="https://www.tiktok.com/@postmarket" target="_blank">
-            <span class="footer__block__link__text">TikTok</span>
-          </a>
-        </div>
-        <div class="footer__block">
           <p class="footer__block__title upper">Download App</p>
-          <a onmouseover="dark('apple')" onmouseout="light('apple')" class="download download_apple" href="https://apps.apple.com/app/id1512915732" target="_blank"></a>
-          <a onmouseover="dark('google')" onmouseout="light('google')" class="download download_google" href="https://play.google.com/store/apps/details?id=pro.postmarket" target="_blank"></a>
+          <a class="download download_apple" href="https://apps.apple.com/app/id1512915732" target="_blank"></a>
+          <a class="download download_google" href="https://play.google.com/store/apps/details?id=pro.postmarket" target="_blank"></a>
         </div>
         <div class="footer__block">
           <p class="footer__block__title upper">Payment Method</p>
@@ -317,7 +295,7 @@
         </div>
       </div>
       <div class="container">
-        <p class="footer__title upper">Copyright @2023 UMedia Product LLC. All rights reserved. 
+        <p class="footer__title upper">Copyright 2023 UMedia Product LLC. All rights reserved. 
           <a class="footer__title__link" href="https://postmarket.pro/article/pravila-naxozhdeniya-na-ploshhadke" target="_blank">PostMartket Rules</a> | 
           <a class="footer__title__link" href="https://postmarket.pro/article/dogovor-publichnoj-oferty-postmarket" target="_blank">User Agreements</a> |
           <a class="footer__title__link" href="https://postmarket.pro/article/politika-konfidencialnosti-internet-sajta-postmarket" target="_blank">Privacy Policy</a>
@@ -327,14 +305,14 @@
     <div class="button-scroll" onclick="ButtonScroll()">
       <p class="button-scroll-title">Top</p>
     </div>
-    <div class="modal-touch" id="modal-touch">
+    <div class="modal-touch" id="modal-touch" style="display: none;">
       <div class="modal-touch-inside">
         <h3 class="modal-touch-inside-title upper">Ваше сообщение отправлено!</h3>
         <p class="modal-touch-inside-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, tempora accusamus aliquid fugit.</p>
         <button class="modal-touch-inside-btn upper" onclick="CloseModal('modal-touch');">Close</button>
       </div>
     </div>
-    <script src="js/lang.js"></script>
-    <script src="js/main.js"></script>
+    <script src="content/js/lang.js"></script>
+    <script src="content/js/main.js"></script>
   </body>
 </html>
