@@ -80,9 +80,9 @@ function changeLanguage() {
       elem.innerHTML = lang[key][browserLang];
   }
   
-  learnImg1.style.background = "url('content/public/img/learn/" + browserLang + "/learn-1.png') no-repeat center";
-  learnImg2.style.background = "url('content/public/img/learn/" + browserLang + "/learn-2.png') no-repeat center";
-  missionImg.style.background = "url('content/public/img/learn/" + browserLang + "/learn-1.png') no-repeat center";
+  learnImg1.style.background = "url('pm_landing_2/content/img/learn/" + browserLang + "/learn-1.png') no-repeat center";
+  learnImg2.style.background = "url('pm_landing_2/content/img/learn/" + browserLang + "/learn-2.png') no-repeat center";
+  missionImg.style.background = "url('pm_landing_2/content/img/learn/" + browserLang + "/learn-1.png') no-repeat center";
 
   if(browserLang == "es") {
     textareaName.placeholder='Nombre';
